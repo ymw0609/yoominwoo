@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoominwoo</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: white;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 10pt;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            line-height: 1.6;
-        }
-        .name {
-            font-weight: bold;
-            font-size: 12pt;
-            margin-bottom: 8px;
-            letter-spacing: 0.05em;
-        }
-        .role {
-            margin-bottom: 30px;
-            color: #333;
-        }
-        .contact {
-            font-size: 10pt;
-        }
-        .contact a {
-            margin: 0 5px;
-            text-decoration: none;
-            color: black;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        .separator {
-            color: #ccc;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoominwoo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div class="container">
-        <div class="name">Yoominwoo</div>
-        <div class="role">Photographer / Director</div>
-        <div class="contact">
-            <a href="mailto:info@yoominwoo.com">info@yoominwoo.com</a>
-            <span class="separator">|</span>
-            <a href="https://www.instagram.com/minwooyoo_" target="_blank">@instagram</a>
-        </div>
+<body class="home">
+
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">Yoominwoo</a>
     </div>
+    <nav class="menu">
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="slideshow" id="slideshow">
+    <div class="slide active" style="background-image: url('images/01.jpg');">
+      <div class="caption"></div>
+    </div>
+
+    <!-- 이미지 추가 예시
+    <div class="slide" style="background-image: url('images/02.jpg');">
+      <div class="caption"></div>
+    </div>
+
+    <div class="slide" style="background-image: url('images/03.jpg');">
+      <div class="caption"></div>
+    </div>
+    -->
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
